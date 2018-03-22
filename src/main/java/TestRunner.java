@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "Features/HomeNavigation.feature"
+        features = "Features/HotelFilterSearch.feature"
         ,glue="StepDefs"
 )
 

@@ -13,19 +13,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class HomeSteps {
+public class HomeSteps extends  Steps{
 
 
-    WebDriver webDriver;
-    PageManager pageMan;
-    Page page;
+
     @Given("^user is in \"([^\"]*)\"$")
     public void given_user_is_in(String pageName) throws PageDoesNotExistException {
-        pageMan=new PageManager();
+
         (page = pageMan.getPage(pageName)).open();
 
-
-        // Write code here that turns the phrase above into concrete actions
     }
 
     @When("^user clicks on hotels button$")
