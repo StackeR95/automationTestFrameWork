@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "Features/HotelFilterSearch.feature"
         ,glue="StepDefs"
+        ,tags = "@debug"
 )
 
 public class TestRunner {
