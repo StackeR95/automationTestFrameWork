@@ -4,9 +4,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "Features/HotelFilterSearch.feature"
+        features = "Features/Booking.feature"
         ,glue="StepDefs"
-        ,tags = "@debug"
+        //,tags = "@debug"
 )
 
 public class TestRunner {

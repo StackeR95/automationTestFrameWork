@@ -26,7 +26,7 @@ public class Hooks {
 
     @After
     public void AfterScenario() throws InterruptedException {
-        Thread.sleep(5000);
+     //   Thread.sleep(5000);
     }
 
 

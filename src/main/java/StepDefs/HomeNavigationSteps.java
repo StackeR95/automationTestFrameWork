@@ -13,16 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class HomeSteps extends  Steps{
-
-
-
-    @Given("^user is in \"([^\"]*)\"$")
-    public void given_user_is_in(String pageName) throws PageDoesNotExistException {
-
-        (page = pageMan.getPage(pageName)).open();
-
-    }
+public class HomeNavigationSteps extends  Steps{
 
     @When("^user clicks on hotels button$")
     public void user_clicks_on_hotels_botton()  {
@@ -34,7 +25,7 @@ public class HomeSteps extends  Steps{
 
     @Then("^user is redirected to \"([^\"]*)\"$")
     public void then_user_is_redirected_to(String pageName) throws PageDoesNotExistException {
-        assertTrue(pageMan.getPage(pageName).isOpened());
+        assertTrue(PageManager.getPage(pageName).isOpened());
     }
 
     @When("^user clicks on flights button$")
